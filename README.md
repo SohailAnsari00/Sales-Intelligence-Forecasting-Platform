@@ -83,7 +83,7 @@ This project was built to demonstrate **end-to-end ownership of data**, from raw
 ---
 
 ## 📂 Project Structure
-
+```text
 sales-intelligence-forecasting-platform/
 │
 ├── data/
@@ -100,5 +100,3 @@ sales-intelligence-forecasting-platform/
 ├── requirements.txt
 ├── README.md
 └── .gitignore
-
-##
