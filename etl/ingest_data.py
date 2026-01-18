@@ -8,16 +8,16 @@ def ingest_data():
     # Load dataset
     df = pd.read_csv(RAW_DATA_PATH, encoding="latin1")
 
-    print("✅ Data loaded successfully")
+    print("Data is loaded successfully")
     print(f"Rows: {df.shape[0]}, Columns: {df.shape[1]}\n")
 
     # Display schema
-    print("📌 Data Types:")
+    print("Data Types:")
     print(df.dtypes)
     print("\n")
 
     # Missing values check
-    print("📌 Missing Values:")
+    print("Missing Values:")
     print(df.isnull().sum())
     print("\n")
 
@@ -29,14 +29,14 @@ def ingest_data():
         .str.replace(" ", "_")
     )
 
-    print("✅ Column names standardized")
+    print("Column names is standardized")
     print(df.columns.tolist())
     print("\n")
 
     # Save baseline processed file
     df.to_csv(PROCESSED_DATA_PATH, index=False)
 
-    print(f"✅ Baseline data saved to {PROCESSED_DATA_PATH}")
+    print(f"Baseline data saved to {PROCESSED_DATA_PATH}")
 
 if __name__ == "__main__":
     ingest_data()
