@@ -35,7 +35,7 @@ def clean_transform_data():
     df["invoicedate"] = pd.to_datetime(df["invoicedate"])
 
 
-    # 5. Feature Engineering (adding new columns)
+    #Feature Engineering (adding new columns)
     df["revenue"] = df["quantity"] * df["unitprice"]
     df["year"] = df["invoicedate"].dt.year
     df["month"] = df["invoicedate"].dt.month
