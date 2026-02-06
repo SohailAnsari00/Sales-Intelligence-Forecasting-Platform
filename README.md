@@ -60,9 +60,9 @@ It consists of **~542,000 records** and includes real-world challenges such as m
 ## 🚧 Project Status
 - ✅ Project structure initialized  
 - ✅ Dataset collected and organized  
-- ⏳ Data ingestion and ETL (in progress)  
-- ⏳ SQL warehouse setup  
-- ⏳ Machine learning models  
+- ✅ Data ingestion and ETL (in progress)  
+- ✅ SQL warehouse setup  
+- ✅ Machine learning models  
 - ⏳ Tableau dashboards  
 
 This README will be updated as the project progresses.
