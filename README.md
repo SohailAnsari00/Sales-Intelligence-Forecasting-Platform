@@ -68,7 +68,8 @@ RFM Analysis + KMeans
         ↓
 Sales Forecasting
         ↓
-Power BI Dashboard 
+Power BI Dashboard
+``` 
 
 ---
 
@@ -129,3 +130,4 @@ Sales-Intelligence-Forecasting-Platform/
 ├── requirements.txt
 ├── .gitignore
 └── README.md
+```
