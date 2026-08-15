@@ -21,13 +21,9 @@ def ingest_data():
     print(df.isnull().sum())
     print("\n")
 
+
     # Standardize column names
-    df.columns = (
-        df.columns
-        .str.strip()
-        .str.lower()
-        .str.replace(" ", "_")
-    )
+    df.columns = df.columns.str.strip().str.title().str.replace(" ", "_")
 
     print("Column names is standardized")
     print(df.columns.tolist())
