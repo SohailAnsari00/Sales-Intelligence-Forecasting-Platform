@@ -15,55 +15,74 @@ The project is built incrementally, following **industry best practices** used i
 ---
 
 ## 🎯 Objectives
-- Build a clean and reproducible **data pipeline**
-- Analyze historical sales trends and customer behavior
-- Segment customers based on purchasing patterns
-- Forecast future sales using machine learning models
-- Present insights through **interactive Tableau dashboards**
+- Build a reproducible data cleaning and ETL pipeline
+- Store and analyze structured sales data using MySQL
+- Perform SQL-based business analysis
+- Analyze customer purchasing behavior using RFM analysis
+- Segment customers using KMeans clustering
+- Forecast future sales using machine learning
+- Build interactive Power BI dashboards for business insights
 
 ---
 
 ## 🧰 Tech Stack
-- **Python:** Pandas, NumPy, Scikit-learn  
-- **Database:** PostgreSQL  
-- **Visualization:** Tableau  
-- **Cloud:** AWS (S3, EC2)  
-- **Workflow Orchestration:** Apache Airflow (planned)
+- **Python:** Pandas , NumPy , Scikit-learn  
+- **Database:** MySQL
+- **Data Processing:** SQLAlchemy 
+- **Visualization:** PowerBI
+- **Machine Learning:** RFM Analysis , KMeans Clustering , Sales Forecasting
 
 ---
 
 ## 📊 Dataset
 **Online Retail Dataset (Kaggle)**
 
-The dataset contains transactional data from an online retail store, including:
-- Invoice number  
-- Product details  
-- Quantity and unit price  
-- Transaction date  
-- Customer ID  
-- Country  
+The dataset contains transactional records from an online retail business, including: 
+
+- Invoice number
+- Product description
+- Quantity
+- Unit price
+- Invoice date
+- Customer ID
+- Country
 
 It consists of **~542,000 records** and includes real-world challenges such as missing values and returns, making it suitable for realistic data engineering and analytics workflows.
 
 ---
 
-## 🔄 Project Workflow (High Level)
-1. Ingest raw sales data (CSV / API)  
-2. Clean and transform data using Python  
-3. Store structured data in a SQL warehouse  
-4. Perform analytics and trend analysis  
-5. Apply ML models for customer segmentation and sales forecasting  
-6. Visualize insights using Tableau dashboards  
+## 🔄 Project Workflow
+
+```text
+Kaggle CSV Dataset
+        ↓
+Python / Pandas
+        ↓
+Data Cleaning & Feature Engineering
+        ↓
+MySQL Database
+        ↓
+SQL Analytics
+        ↓
+RFM Analysis + KMeans
+        ↓
+Sales Forecasting
+        ↓
+Power BI Dashboard 
 
 ---
 
 ## 🚧 Project Status
-- ✅ Project structure initialized  
-- ✅ Dataset collected and organized  
-- ✅ Data ingestion and ETL (in progress)  
-- ✅ SQL warehouse setup  
-- ✅ Machine learning models  
-- ⏳ Tableau dashboards  
+
+✅ Kaggle dataset integrated
+✅ Data ingestion pipeline
+✅ Data cleaning and transformation
+✅ Feature engineering
+🔄 MySQL integration
+🔄 SQL analytics
+🔄 Customer segmentation
+🔄 Sales forecasting
+🔄 Power BI dashboard 
 
 This README will be updated as the project progresses.
 
@@ -75,28 +94,38 @@ This project was built to demonstrate **end-to-end ownership of data**, from raw
 ---
 
 ## 📬 Future Enhancements
-- Automated ETL pipelines using Apache Airflow  
-- Cloud deployment on AWS  
-- Performance optimization and scalability improvements  
-- Advanced forecasting models  
-
+- Improve forecasting model evaluation
+- Compare multiple forecasting approaches
+- Add additional business KPIs
+- Improve customer segmentation
+- Automate the ETL pipeline
 ---
 
 ## 📂 Project Structure
+
 ```text
-sales-intelligence-forecasting-platform/
+Sales-Intelligence-Forecasting-Platform/
 │
 ├── data/
-│   ├── raw/                # Original raw dataset
-│   ├── processed/          # Cleaned and transformed data
+│   ├── raw/
+│   └── processed/
 │
-├── etl/                    # Data ingestion and transformation scripts
-├── database/               # SQL schema and data loading scripts
-├── analysis/               # Exploratory data analysis
-├── ml/                     # Machine learning models
-├── dashboards/             # Tableau dashboards
-├── config/                 # Configuration files
+├── etl/
+│   ├── ingest_data.py
+│   ├── clean_transform.py
+│   └── load_to_mysql.py
+│
+├── analytics/
+│   ├── trend_analysis.py
+│   ├── customer_segmentation.py
+│   └── sales_forecasting.py
+│
+├── database/
+│   └── queries.sql
+│
+├── powerbi/
+│   └── screenshots/
 │
 ├── requirements.txt
-├── README.md
-└── .gitignore
+├── .gitignore
+└── README.md
