@@ -1,14 +1,5 @@
-# Python
-venv/
-__pycache__/
-*.pyc
-
 # Environment variables
 .env
 
-# Data outputs
-data/processed/
-
-# OS files
-.DS_Store
-Thumbs.db
+# Virtual environment
+.venv/

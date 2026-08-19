@@ -16,7 +16,7 @@ def clean_transform_data():
     print(f"Initial shape: {df.shape}\n")
 
 
-    #Remove cancelled transactions --- (Invoices starting with 'C')    
+    #Remove cancelled transactions --- (Invoices starting with 'C' and 'A')    
     df = df[~df["Invoice_No"].str.startswith(("C", "A"), na=False)]
     df["Invoice_No"] = df["Invoice_No"].astype(int)
     print(f"After removing cancellations: {df.shape}")
